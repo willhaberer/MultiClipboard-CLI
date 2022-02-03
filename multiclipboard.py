@@ -33,7 +33,7 @@ if len(sys.argv)==2:
             print("Key Not in Database")
     elif command == "list":
         print(data)
-    else:
+    else: 
         print("Unknown Command")
 else:
         print("Please pass exactly one command")
