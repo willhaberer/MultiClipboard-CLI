@@ -9,9 +9,12 @@ def save_data(filepath, data):
             json.dump(data, f)
 
 def load_data(filepath):
-    with open(filepath, "r")as f:
+    try:
+        with open(filepath, "r")as f:
             data=json.load(f)
             return data
+    except:
+        return {}
 
 if len(sys.argv)==2:
     command =sys.argv[1]
